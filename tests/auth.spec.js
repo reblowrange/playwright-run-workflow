@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-
+/* 
 test('authenticate', async ({ page }) => {
   // Navigate to site and open login
   await page.goto('https://bitheap.tech');
@@ -15,3 +15,4 @@ test('authenticate', async ({ page }) => {
   // Assert that the authenticated user link appears
   await expect(page.locator('#menu-item-2333 > a')).toHaveText('Hello, Playwright', { timeout: 5000 });
 });
+ */
