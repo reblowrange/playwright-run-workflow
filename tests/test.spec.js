@@ -1,10 +1,10 @@
 require("dotenv").config();
 const { chromium } = require("playwright");
-const { test, expect } = require("@playwright/test");
+const { test, expect, firefox } = require("@playwright/test");
 
 test.describe("Play practice", () => {
   test("Authenticate", async ({}) => {
-    const browser = await chromium.launch({ headless: true });
+    const browser = await firefox.launch({ headless: true });
     const page = await browser.newPage();
 
     await authenticate(page);
