@@ -4,7 +4,7 @@ const { test, expect } = require("@playwright/test");
 
 test.describe("Play practice", () => {
   test("Authenticate", async ({}) => {
-    const browser = await chromium.launch({ headless: false });
+    const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage();
 
     await authenticate(page);
